@@ -29,12 +29,28 @@ import java.util.Scanner;
 // 		}
 // 		return reversed;
 // 	}
-// 		public static void main (String [] args){
-// 			Scanner d = new Scanner(System.in);
-// 			int num = d.nextInt();
-// 			System.out. println("Reversed number is: " + reverse(num));
-// 		}
+
 
 // approach 3: using recursion to reverse the number.
+	public static int reverseNum(int num, int reversed){
+		if(num == 0){
+			return reversed;
+		}
+		int digit = num % 10;
+		return reverseNum(num / 10, reversed * 10 + digit);
+	}
+	public  static int reverse(int  num){
+		return reverseNum(num, 0);
+	}
+
+	// approach 4: using a main method to take input and call the reverse method.
+			public static void main (String [] args){
+			Scanner d = new Scanner(System.in);
+			System.out.println("Enter a number to reverse:");
+			int num = d.nextInt();
+			System.out. println("Reversed number is: " + reverse(num));
+			d.close();
+		}
+
 	}
 
