@@ -1,5 +1,5 @@
 
-import java.util.Scanner;
+
 public class MoveZeros {
     // This method moves all zeros in the array to the end while maintaining the order of non-zero elements.
     // It uses a two-pointer technique where one pointer tracks the position of the next non-zero element.
