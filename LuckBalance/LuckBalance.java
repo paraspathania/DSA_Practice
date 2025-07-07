@@ -2,8 +2,8 @@ package LuckBalance;
 
 import java.io.*;
 import java.util.*;
-import java.util.stream.*;
-import static java.util.stream.Collectors.toList;
+// import java.util.stream.*;
+// import static java.util.stream.Collectors.toList;
 
 class Result {
     public static int luckBalance(int k, List<List<Integer>> contests) {
@@ -46,23 +46,23 @@ public class LuckBalance {
 
         String[] firstMultipleInput = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
 
-        int n = Integer.parseInt(firstMultipleInput[0]);
+        // int n = Integer.parseInt(firstMultipleInput[0]);
 
         int k = Integer.parseInt(firstMultipleInput[1]);
 
         List<List<Integer>> contests = new ArrayList<>();
 
-        IntStream.range(0, n).forEach(i -> {
-            try {
-                contests.add(
-                    Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-                        .map(Integer::parseInt)
-                        .collect(toList())
-                );
-            } catch (IOException ex) {
-                throw new RuntimeException(ex);
-            }
-        });
+        // IntStream.range(0, n).forEach(i -> {
+        //     try {
+        //         contests.add(
+        //             Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+        //                 .map(Integer::parseInt)
+        //                 .collect(toList())
+        //         );
+        //     } catch (IOException ex) {
+        //         throw new RuntimeException(ex);
+        //     }
+        // });
 
         int result = Result.luckBalance(k, contests);
 
