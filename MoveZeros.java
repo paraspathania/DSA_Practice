@@ -26,7 +26,7 @@ public class MoveZeros {
     System.out.println();
     System.out.println("Moving all zeros to the end of the array...");
         moveZerosToEnd(arr);
-
+// Print the result
         System.out.print("Result: ");
         for (int num : arr) {
             System.out.print(num + " ");
