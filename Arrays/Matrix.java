@@ -1,4 +1,9 @@
 package Arrays;
+
+// You are provided with an integer matrix; you need to perform the following operation and return the final matrix.
+//Whenever you find a zero in an original matrix, convert its entire row and column into a zero.
+
+
  class Matrix {
    
     public static void moveZerosToEnd(int[] arr) {
