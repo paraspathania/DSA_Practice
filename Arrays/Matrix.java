@@ -2,7 +2,7 @@ package Arrays;
 
 // You are provided with an integer matrix; you need to perform the following operation and return the final matrix.
 //Whenever you find a zero in an original matrix, convert its entire row and column into a zero.
-
+//// For example, if the input matrix is:
 
  class Matrix {
    
