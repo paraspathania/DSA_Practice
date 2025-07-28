@@ -54,7 +54,5 @@ int main(){
         }
         cout<<endl;
         rows2--;
-    }
-    
-
+    }  
 }
