@@ -1,16 +1,7 @@
-// package Library_tracker;
+
+
 import java.util.ArrayList;
 import java.util.HashMap;
-
-/* 
- * 1. Books List
- * 2. addBook
- * 3. displayBooks
- * 4.showBorrowedBooks
- * 5. returnBook
- * 6. borrowBook
- */
-
 public class Library {
     private ArrayList<Book> books;
     private ArrayList<User> users;
