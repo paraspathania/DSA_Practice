@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-/*  */
+/* In this User class it manage users details and borrowed books */
 
 public class User {
     private int userID;
