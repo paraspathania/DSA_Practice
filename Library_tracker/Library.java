@@ -1,4 +1,4 @@
-
+/* In this library class it manage the collections of books & users, and operations */
 
 import java.util.ArrayList;
 import java.util.HashMap;
