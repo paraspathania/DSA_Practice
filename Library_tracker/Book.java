@@ -1,3 +1,4 @@
+/* In this book class it manage books details and  their availability*/
 
 public class Book{
  private int bookID;
