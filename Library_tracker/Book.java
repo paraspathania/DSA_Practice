@@ -1,10 +1,4 @@
 
-/*
- * All the things related to a books
- * 1. Name
- * 2. Author
- * 3. isBorrowed
- */
 public class Book{
  private int bookID;
     private String title;
