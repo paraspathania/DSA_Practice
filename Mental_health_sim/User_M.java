@@ -1,10 +1,10 @@
 import java.util.LinkedList;
 
-public class User {
+public class User_M {
     String name;
     LinkedList<Integer> scoreHistory;
 
-    public User(String name) {
+    public User_M(String name) {
         this.name = name;
         this.scoreHistory = new LinkedList<>();
     }

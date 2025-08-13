@@ -2,7 +2,7 @@ import java.util.*;
 
 public class MentalHealthSimulator {
     ArrayList<Question> questions;
-    HashMap<String, User> users; // Username → User
+    HashMap<String, User_M> users; // Changed from User to User_M
 
     public MentalHealthSimulator() {
         questions = new ArrayList<>();
@@ -15,7 +15,7 @@ public class MentalHealthSimulator {
 
     public void registerUser(String username) {
         if (!users.containsKey(username)) {
-            users.put(username, new User(username));
+            users.put(username, new User_M(username)); // Changed
             System.out.println("User registered: " + username);
         } else {
             System.out.println("User already exists!");
@@ -25,7 +25,7 @@ public class MentalHealthSimulator {
     // Updated with Stack for undo feature
     public void takeAssessment(String username) {
         Scanner sc = new Scanner(System.in);
-        User user = users.get(username);
+        User_M user = users.get(username); // Changed
         if (user == null) {
             System.out.println("User not found!");
             return;
@@ -78,7 +78,7 @@ public class MentalHealthSimulator {
     }
 
     public void viewUserHistory(String username) {
-        User u = users.get(username);
+        User_M u = users.get(username); // Changed
         if (u != null) {
             u.viewHistory();
         } else {
@@ -90,7 +90,7 @@ public class MentalHealthSimulator {
     public void showLeaderboard() {
         List<Map.Entry<String, Double>> userAverages = new ArrayList<>();
 
-        for (Map.Entry<String, User> entry : users.entrySet()) {
+        for (Map.Entry<String, User_M> entry : users.entrySet()) { // Changed
             LinkedList<Integer> scores = entry.getValue().scoreHistory;
             if (!scores.isEmpty()) {
                 double avg = scores.stream().mapToInt(Integer::intValue).average().orElse(0);
