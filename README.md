@@ -1,1 +1,1 @@
-# summer_training_DSA
+# DSA_Practice
